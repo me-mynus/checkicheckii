@@ -24,12 +24,7 @@ export function SettingsScreen({
   const activeUser = users.find((u) => u.id === activeUserId);
 
   const handleAddUser = () => {
-    if (newUserName.trim() && newUserTopic.trim()) {
-      onAddUser(newUserName.trim(), newUserTopic.trim());
-      setNewUserName('');
-      setNewUserTopic('');
-      setIsAddingUser(false);
-    }
+    // Duplicate app-directory settings screen does not currently expose add-user fields.
   };
 
   const handleUpdateUser = (userId: string) => {
